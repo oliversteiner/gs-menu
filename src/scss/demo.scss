@@ -1,0 +1,59 @@
+body {
+  font-family: Roboto, sans-serif;
+  color: gray;
+}
+
+h1 {
+  font-size: 1.1em;
+}
+
+
+#menu-circle {
+  stroke: silver;
+  fill: #e5e5e5;
+}
+
+.menu-container{
+  display: flex;
+  border: 1px solid #f58282; /* Debug */
+  justify-content: center;
+  align-items: center;
+}
+
+svg{
+  border: 1px solid #dedede; /* Debug */
+}
+
+.menu-item {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #dedede; /* Debug */
+  }
+
+  .label {
+    position: absolute;
+    padding-right: 20px;
+    left: -60px;
+  }
+
+}
+
+
+#menu-item-1 .icon {
+  background-color: #af8ec4;
+}
+
+#menu-item-2 .icon {
+  background-color: #8ebec4;
+}
+
+#menu-item-3 .icon {
+  background-color: #a5a26b;
+}
