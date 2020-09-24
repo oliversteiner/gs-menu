@@ -11,8 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3deaf8c-356a-4e0e-ae7a-817befd71f6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/scss/background.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/settings.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/demo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/demo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/demo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +27,14 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,11 +49,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
@@ -49,6 +65,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/scss" />
       <recent name="$PROJECT_DIR$/src" />
@@ -88,7 +107,7 @@
       <workItem from="1600856567102" duration="10104000" />
       <workItem from="1600870246191" duration="7769000" />
       <workItem from="1600881485902" duration="411000" />
-      <workItem from="1600941340718" duration="12286000" />
+      <workItem from="1600941340718" duration="14869000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1600823091208</created>
@@ -125,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600951658207</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor">
+      <created>1600958583214</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600958583214</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +177,8 @@
     <MESSAGE value="First Item Animation ok" />
     <MESSAGE value="3 Items OK" />
     <MESSAGE value="Restart Animation on Window Resize" />
-    <option name="LAST_COMMIT_MESSAGE" value="Restart Animation on Window Resize" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="174" y="324" key="#SCSS_Lint" timestamp="1600820053801">
@@ -162,10 +189,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="349" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1600823439941" />
-    <state x="873" y="325" key="CommitChangelistDialog2" timestamp="1600951658009">
+    <state x="873" y="325" key="CommitChangelistDialog2" timestamp="1600958583066">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="873" y="325" key="CommitChangelistDialog2/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600951658009" />
+    <state x="873" y="325" key="CommitChangelistDialog2/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600958583066" />
     <state x="156" y="246" key="EditFileWatcherDialog" timestamp="1600820105933">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -199,18 +226,18 @@
     </state>
     <state x="0" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1600823808708" />
     <state x="0" y="147" key="SettingsEditor/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600864118626" />
-    <state x="888" y="471" key="Vcs.Push.Dialog.v2" timestamp="1600951663183">
+    <state x="888" y="471" key="Vcs.Push.Dialog.v2" timestamp="1600958587877">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="888" y="471" key="Vcs.Push.Dialog.v2/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600951663183" />
+    <state x="888" y="471" key="Vcs.Push.Dialog.v2/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600958587877" />
     <state x="124" y="123" width="2328" height="1217" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600865189880">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="124" y="123" width="2328" height="1217" key="com.intellij.history.integration.ui.views.FileHistoryDialog/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600865189880" />
-    <state width="300" height="111" key="javadoc.popup.new" timestamp="1600955104086">
+    <state width="300" height="111" key="javadoc.popup.new" timestamp="1600961139742">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="300" height="111" key="javadoc.popup.new/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600955104086" />
+    <state width="300" height="111" key="javadoc.popup.new/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600961139742" />
     <state x="290" y="326" key="scopes" timestamp="1600820085239">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
