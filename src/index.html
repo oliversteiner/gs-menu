@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glanzstück Menu</title>
@@ -9,11 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1 class="demo-title">Glanzstück Menu Demo v1</h1>
-
-
-
-<!-- Background deko -->
 
 
 <!-- Glanzstueck Logo-->
@@ -236,34 +231,36 @@
 
 
 <!-- Settings -->
-<div class="settings">
+<div id="settings">
+  <details open>
+    <!-- Header -->
+    <summary>
+      <div class="settings-header">
+        <h1 class="settings-main-title">Glanzstück Demo</h1>
+        <div class="settings-version"> v1</div>
+      </div>
+    </summary>
 
-  <h1 class="settings-main-title">Glanzstück Demo</h1>
-  <div class="settings-version"> v1</div>
 
-  <details>
-    <summary>Settings</summary>
-
-  <hr class="settings-divider">
-
-    <!-- Title: Settings-->
+    <!-- Settings-->
     <h2 class="settings-title">Settings</h2>
+
 
     <ul class="settings-list">
       <!-- Debug Mode -->
-      <li class="settings-list-item">
+      <li class="settings-list-item checkbox">
         <input type="checkbox" name="debug-mode" id="debug-mode">
         <label for="debug-mode">Debug Mode</label>
       </li>
 
       <!-- Animate Background -->
-      <li class="settings-list-item">
+      <li class="settings-list-item checkbox">
         <input type="checkbox" name="animate-background" id="animate-background">
         <label for="animate-background">Animate Background</label>
       </li>
 
       <!-- Label -->
-      <li class="settings-list-item">
+      <li class="settings-list-item checkbox">
         <input type="checkbox" name="label" id="label">
         <label for="label">Label</label>
       </li>
@@ -271,25 +268,37 @@
 
     <hr class="settings-divider">
 
-    <!-- Title: Animation Controll-->
+    <!-- Animation Controll-->
     <h2 class="settings-title">Animation Controll</h2>
 
     <div class="settings-toolbar">
-      <button class="main-menu-restart">Restart</button>
-      <button class="main-menu-play">Play</button>
-      <button class="main-menu-pause">Pause</button>
+      <div role="button" class="settings-button main-menu-restart">Restart</div>
+      <div role="button" class="settings-button main-menu-play">Play</div>
+      <div role="button" class="settings-button main-menu-pause">Pause</div>
     </div>
     <ul class="settings-list">
       <!-- Slow Down Animation -->
-      <li class="settings-list-item">
+      <li class="settings-list-item checkbox">
         <input type="checkbox" name="slow-down-animation" id="slow-down-animation">
         <label for="slow-down-animation">Slow Down Animation</label>
       </li>
     </ul>
+
     <hr class="settings-divider">
+
+    <!-- Info-->
+    <h2 class="settings-title">Info</h2>
+    <ul>
+      <li>
+        <span class="label">Screen:</span>
+        <span class="value display-screen-size">x: 1000  y: 1000</span>
+      </li>
+      <li><span class="label">Media:</span>
+        <span class="value display-media-query">Desktop</span>
+      </li>
+    </ul>
   </details>
 </div>
-
 
 <script src="bundle.js"></script>
 <script src="vendor/fontawesome/all.min.js"></script>

@@ -11,14 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3deaf8c-356a-4e0e-ae7a-817befd71f6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scss/background.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/settings.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/settings.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/demo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/settings.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +102,7 @@
       <workItem from="1600856567102" duration="10104000" />
       <workItem from="1600870246191" duration="7769000" />
       <workItem from="1600881485902" duration="411000" />
-      <workItem from="1600941340718" duration="14869000" />
+      <workItem from="1600941340718" duration="18811000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1600823091208</created>
@@ -151,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600958583214</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add settings and background">
+      <created>1600961194639</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600961194639</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +180,8 @@
     <MESSAGE value="3 Items OK" />
     <MESSAGE value="Restart Animation on Window Resize" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="add settings and background" />
+    <option name="LAST_COMMIT_MESSAGE" value="add settings and background" />
   </component>
   <component name="WindowStateProjectService">
     <state x="174" y="324" key="#SCSS_Lint" timestamp="1600820053801">
@@ -189,10 +192,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="349" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1600823439941" />
-    <state x="873" y="325" key="CommitChangelistDialog2" timestamp="1600958583066">
+    <state x="873" y="325" key="CommitChangelistDialog2" timestamp="1600961194492">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="873" y="325" key="CommitChangelistDialog2/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600958583066" />
+    <state x="873" y="325" key="CommitChangelistDialog2/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600961194492" />
     <state x="156" y="246" key="EditFileWatcherDialog" timestamp="1600820105933">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -234,10 +237,14 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="124" y="123" width="2328" height="1217" key="com.intellij.history.integration.ui.views.FileHistoryDialog/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600865189880" />
-    <state width="300" height="111" key="javadoc.popup.new" timestamp="1600961139742">
+    <state x="1094" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600961832017">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="300" height="111" key="javadoc.popup.new/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600961139742" />
+    <state x="1094" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600961832017" />
+    <state width="300" height="111" key="javadoc.popup.new" timestamp="1600964580804">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="300" height="111" key="javadoc.popup.new/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600964580804" />
     <state x="290" y="326" key="scopes" timestamp="1600820085239">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

@@ -1,6 +1,142 @@
-.settings {
-  h1{
-    color: greenyellow;
+$background: rgb(29, 29, 29);
+$line: #404040;
+$text: #999;
+$text-hover: #e3e3e3;
+$title: #bdbdbd;
+$accent: #279AA2;
+$check: #1ad0dc;
+
+#settings {
+  font-family: Roboto, Roboto-Regular, sans-serif;
+  color: $text;
+  font-size: 14px;
+  padding: 10px;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $background;
+  min-width: 250px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 16px 3px rgba(0, 0, 0, 0.2);
+
+  h1 {
+    font-size: 15px;
+    color: $accent;
+    text-transform: uppercase;
+    display: inline-block;
 
   }
+
+  summary {
+    cursor: pointer;
+  }
+
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    padding: 4px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  input[type='checkbox'] {
+    width: 9px !important;
+    height: 9px !important;
+    margin-right: 10px;
+    appearance: none;
+    box-shadow: none;
+    background-color: $text;
+  }
+
+  input[type='checkbox']:checked {
+    background-color: $check;
+  }
+
+  .label{
+    margin-right: 20px;
+
+  }
+  .value{
+    color: $accent;
+  }
+
 }
+
+.settings-list-item.checkbox {
+  label {
+    width: 100%;
+    cursor: pointer;
+  }
+  label:hover{
+    color: $text-hover;
+  }
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.settings-version {
+  margin-right: 20px;
+}
+
+.settings-title {
+  color: $title;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 400;
+  padding: 5px 0;
+}
+
+hr.settings-divider {
+  border: none;
+  border-bottom: solid 1px $line;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+div.settings-toolbar {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 12px;
+}
+
+div.settings-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  height: 20px;
+  padding: 3px 7px;
+  background-image: linear-gradient(180deg, #313131 0%, #151515 100%);
+  border-radius: 2px;
+  margin-right: 10px;
+  text-shadow: #151515;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  font-size: 0.9em;
+
+
+  &:hover {
+    background-image: linear-gradient(180deg, #4c4c4c 0%, #3d3d3d 100%);
+
+  }
+
+  &:active {
+    background-image: linear-gradient(180deg, #4b4b4b 0%, #636363 100%);
+    color: black;
+  }
+}
+
+
