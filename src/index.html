@@ -232,19 +232,17 @@
 
 <!-- Settings -->
 <div id="settings">
-  <details open>
+  <details open class="main-details">
     <!-- Header -->
     <summary>
-      <div class="settings-header">
-        <h1 class="settings-main-title">Glanzstück Demo</h1>
-        <div class="settings-version"> v1</div>
-      </div>
+        <span class="settings-main-title">Glanzstück Demo</span>
+        <span class="settings-version"> v1</span>
     </summary>
 
 
     <!-- Settings-->
-    <h2 class="settings-title">Settings</h2>
-
+    <details open>
+      <summary> Settings </summary>
 
     <ul class="settings-list">
       <!-- Debug Mode -->
@@ -265,29 +263,28 @@
         <label for="label">Label</label>
       </li>
     </ul>
-
-    <hr class="settings-divider">
+    </details>
 
     <!-- Animation Controll-->
-    <h2 class="settings-title">Animation Controll</h2>
-
-    <div class="settings-toolbar">
-      <div role="button" class="settings-button main-menu-restart">Restart</div>
-      <div role="button" class="settings-button main-menu-play">Play</div>
-      <div role="button" class="settings-button main-menu-pause">Pause</div>
-    </div>
-    <ul class="settings-list">
-      <!-- Slow Down Animation -->
-      <li class="settings-list-item checkbox">
-        <input type="checkbox" name="slow-down-animation" id="slow-down-animation">
-        <label for="slow-down-animation">Slow Down Animation</label>
-      </li>
-    </ul>
-
-    <hr class="settings-divider">
+    <details open>
+      <summary> Animation Controll </summary>
+      <div class="settings-toolbar">
+        <div role="button" class="settings-button main-menu-restart">Restart</div>
+        <div role="button" class="settings-button main-menu-play">Play</div>
+        <div role="button" class="settings-button main-menu-pause">Pause</div>
+      </div>
+      <ul class="settings-list">
+        <!-- Slow Down Animation -->
+        <li class="settings-list-item checkbox">
+          <input type="checkbox" name="slow-down-animation" id="slow-down-animation">
+          <label for="slow-down-animation">Slow Down Animation</label>
+        </li>
+      </ul>
+    </details>
 
     <!-- Info-->
-    <h2 class="settings-title">Info</h2>
+    <details open>
+    <summary>Info</summary>
     <ul>
       <li>
         <span class="label">Screen:</span>
@@ -297,6 +294,7 @@
         <span class="value display-media-query">Desktop</span>
       </li>
     </ul>
+    </details>
   </details>
 </div>
 
