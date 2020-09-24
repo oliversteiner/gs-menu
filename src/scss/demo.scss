@@ -1,59 +1,134 @@
+$background: #2C2C2C;
+$line: #505050;
+$text: #e7e7e7;
+$accent: #279AA2;
+
 body {
-  font-family: Roboto, sans-serif;
-  color: gray;
+  font-family: 'Barlow', Roboto, sans-serif;
+  color: $text;
+  background-color: $background;
 }
 
-h1 {
+h1.demo-title {
+  display: inline-block;
+  font-weight: 300;
+  left: 50px;
+  top: 50px;
   font-size: 1.1em;
 }
 
-
-#menu-circle {
-  stroke: silver;
-  fill: #e5e5e5;
-}
-
-.menu-container{
+.logo-container {
   display: flex;
-  border: 1px solid #f58282; /* Debug */
   justify-content: center;
   align-items: center;
+
+  svg {
+    margin: auto;
+    display: block;
+  }
+
 }
 
-svg{
-  border: 1px solid #dedede; /* Debug */
+#gs-logo-container {
+  z-index: 20;
 }
+
+#gs-headline {
+  height: 100px;
+  width: 356px;
+
+  svg {
+    margin-top: 50px;
+    transform: scale(1.2);
+  }
+}
+
+#circle-container {
+  // border: 1px solid #dedede; /* Debug */
+}
+
+.hide-menu-items {
+  display: revert;
+  position: relative;
+}
+
+#menu-circle {
+  stroke: greenyellow;
+  fill: none;
+}
+
+#background-oval-1 {
+  stroke: $line;
+  fill: none;
+}
+
+#background-oval-2 {
+  stroke: $line;
+  fill: none;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -250px;
+  position: relative;
+}
+
 
 .menu-item {
   display: flex;
   position: absolute;
   justify-content: center;
   align-items: center;
+  font-weight: 300;
+  z-index: 10;
+  width: 200px;
+  margin: auto;
+  visibility: visible;
 
   .icon {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    border: 1px solid #dedede; /* Debug */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    border: 1px solid $line; /* Debug */
+    font-size: 25px;
+    color: $text;
+
+
   }
 
   .label {
-    position: absolute;
-    padding-right: 20px;
-    left: -60px;
+    position: relative;
+    width: 100px;
+    right: 10px;
+    text-align: right;
+    border: 1px solid $line; /* Debug */
   }
 
 }
 
+.menu-item:hover {
+  cursor: pointer;
 
-#menu-item-1 .icon {
-  background-color: #af8ec4;
+  .icon {
+    background-color: white;
+    color: #2C2C2C;
+  }
 }
 
-#menu-item-2 .icon {
-  background-color: #8ebec4;
+.menu-item:active {
+  cursor: pointer;
+
+  .icon {
+    background-color: $accent;
+    color: white;
+  }
 }
 
-#menu-item-3 .icon {
-  background-color: #a5a26b;
+#menu-item-container {
+  border: 1px solid #dedede; /* Debug */
 }
