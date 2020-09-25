@@ -85,7 +85,6 @@ $check: #1ad0dc;
 }
 
 
-
 #settings summary,
 .settings-title {
   color: $title;
@@ -165,4 +164,9 @@ div.settings-button {
 .media-icon {
   color: $label;
   margin-right: 10px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }

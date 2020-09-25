@@ -12,8 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a3deaf8c-356a-4e0e-ae7a-817befd71f6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/settings.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +104,7 @@
       <workItem from="1600870246191" duration="7769000" />
       <workItem from="1600881485902" duration="411000" />
       <workItem from="1600941340718" duration="23791000" />
-      <workItem from="1601030219014" duration="18014000" />
+      <workItem from="1601030219014" duration="18239000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1600823091208</created>
@@ -218,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601044878688</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Refactor Settings as TS Module">
+      <created>1601049239986</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1601049239986</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +261,8 @@
     <MESSAGE value="Enable Json Import for TS" />
     <MESSAGE value="Refactor: Get MediaQueries from JSON" />
     <MESSAGE value="MainMenu Controls OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="MainMenu Controls OK" />
+    <MESSAGE value="Refactor Settings as TS Module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor Settings as TS Module" />
   </component>
   <component name="WindowStateProjectService">
     <state x="174" y="324" key="#SCSS_Lint" timestamp="1600820053801">
@@ -265,10 +273,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="349" y="215" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.877@0.23.1440.877" timestamp="1600823439941" />
-    <state x="873" y="325" key="CommitChangelistDialog2" timestamp="1601044878592">
+    <state x="873" y="325" key="CommitChangelistDialog2" timestamp="1601049239893">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="873" y="325" key="CommitChangelistDialog2/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1601044878592" />
+    <state x="873" y="325" key="CommitChangelistDialog2/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1601049239893" />
     <state x="156" y="246" key="EditFileWatcherDialog" timestamp="1600820105933">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -314,10 +322,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1094" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600961832017" />
-    <state width="300" height="111" key="javadoc.popup.new" timestamp="1601048672027">
+    <state width="300" height="111" key="javadoc.popup.new" timestamp="1601049425010">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="300" height="111" key="javadoc.popup.new/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1601048672027" />
+    <state width="300" height="111" key="javadoc.popup.new/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1601049425010" />
     <state x="290" y="326" key="scopes" timestamp="1600820085239">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
