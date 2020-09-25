@@ -114,3 +114,5 @@ function resizeCheck() {
 }
 
 window.addEventListener("resize", resizeCheck)
+
+import  './settings'

@@ -53,7 +53,7 @@ h1.demo-title {
 }
 
 #menu-circle {
-  stroke: greenyellow;
+  stroke: none;
   fill: none;
 }
 
@@ -94,7 +94,7 @@ h1.demo-title {
     width: 60px;
     height: 60px;
     border-radius: 60px;
-    border: 1px solid $line; /* Debug */
+    border: 1px solid $line;
     font-size: 25px;
     color: $text;
 
@@ -106,7 +106,6 @@ h1.demo-title {
     width: 100px;
     right: 10px;
     text-align: right;
-    border: 1px solid $line; /* Debug */
   }
 
 }
@@ -129,18 +128,22 @@ h1.demo-title {
   }
 }
 
-#menu-item-container {
-  border: 1px solid #dedede; /* Debug */
-}
 
+// Debug Mode
 
-.cursor-follow{
-  display: block;
- position: fixed;
-  left: 0;
-  top:0;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #dedede; /* Debug */
-  background-color: #279AA2;
+body.debug {
+
+  #menu-circle {
+    stroke: gold;
+    fill: none;
+  }
+
+  .menu-item {
+    border: 1px solid $line; /* Debug */
+  }
+
+  #menu-item-container {
+    border: 1px solid $line; /* Debug */
+  }
+
 }
