@@ -104,10 +104,11 @@ function resizeCheck() {
 
 window.addEventListener("resize", resizeCheck)
 
-import './settings'
+import Settings from './settings'
 import Info from './info'
 
-let info = new Info()
+const settingsPanel = new Settings()
+const info = new Info()
 
 
 
@@ -147,14 +148,10 @@ const mainMenuPause = function () {
   menuTimeline.pause()
 
 }
-// Settings Controls
-const buttonMenuRestart = document.querySelector('.main-menu-restart')
-const buttonMenuPlay = document.querySelector('.main-menu-play')
-const buttonMenuPause = document.querySelector('.main-menu-pause')
-const checkBoxSlowDownAnimation = document.getElementById('slow-down-animation')
+
 
 // Add Listeners
-checkBoxSlowDownAnimation.addEventListener("change", toggleSlowDownAnimation, false)
-buttonMenuRestart.addEventListener("click", mainMenuRestart)
-buttonMenuPlay.addEventListener("click", mainMenuPlay)
-buttonMenuPause.addEventListener("click", mainMenuPause)
+settingsPanel.elems.checkBoxSlowDownAnimation.addEventListener("change", toggleSlowDownAnimation, false)
+settingsPanel.elems.buttonMenuRestart.addEventListener("click", mainMenuRestart)
+settingsPanel.elems.buttonMenuPlay.addEventListener("click", mainMenuPlay)
+settingsPanel.elems.buttonMenuPause.addEventListener("click", mainMenuPause)
