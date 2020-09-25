@@ -69,7 +69,6 @@ let resizeTimer: any
 function toggleMainMenuItems() {
   MainMenuItems.forEach((item: HTMLElement) => {
     const style = item.getAttribute('style')
-    console.log('style', style)
 
     if (style == 'visibility:hidden') {
       item.setAttribute('style', 'visibility:visible')
@@ -104,7 +103,6 @@ function animateMainMenu() {
 
 function resizeCheck() {
   hideMainMenuItems()
-  console.log('MainMenuItems', MainMenuItems)
 
 
   clearTimeout(resizeTimer)
@@ -116,3 +114,7 @@ function resizeCheck() {
 window.addEventListener("resize", resizeCheck)
 
 import  './settings'
+import Info from './info'
+
+let info = new Info()
+
