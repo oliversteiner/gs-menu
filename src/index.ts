@@ -155,3 +155,7 @@ settingsPanel.elems.checkBoxSlowDownAnimation.addEventListener("change", toggleS
 settingsPanel.elems.buttonMenuRestart.addEventListener("click", mainMenuRestart)
 settingsPanel.elems.buttonMenuPlay.addEventListener("click", mainMenuPlay)
 settingsPanel.elems.buttonMenuPause.addEventListener("click", mainMenuPause)
+
+import Preview from './preview'
+
+const preview = new Preview()

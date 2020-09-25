@@ -168,7 +168,49 @@
   </div>
 </div>
 
+<!-- Preview-->
+<div id="preview-container">
+  <div class="preview-center">
+  <div id="space3D-container" class="">
+    <div class="space3d left">
+      <div class="_3dbox">
 
+        <!-- about-us -->
+        <div class="_3dface _3dface--front preview-item" id="preview-about-us">
+          About us
+        </div>
+
+        <!-- what-we-do -->
+        <div class="_3dface _3dface--top preview-item" id="preview-what-we-do">
+          What we do
+        </div>
+
+        <!-- showcase -->
+        <div class="_3dface _3dface--bottom preview-item" id="preview-showcase">
+          Showcase
+        </div>
+
+        <!-- sticker-shop -->
+        <div class="_3dface _3dface--left preview-item" id="preview-sticker-shop">
+          Sticker Shop
+        </div>
+
+        <!-- events -->
+        <div class="_3dface _3dface--right preview-item" id="preview-events">
+          Events
+        </div>
+
+        <!-- contact -->
+        <div class="_3dface _3dface--back preview-item" id="preview-contact">
+          Contact
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- Menu Container -->
 <div class="menu-container">
   <div>
     <svg id="circle-container" height="700" width="700">
@@ -179,39 +221,40 @@
   </div>
 </div>
 
+<!-- Menu Items Container-->
 <div id="menu-item-container">
   <!-- about us-->
-  <div id="menu-item-1" class="menu-item">
+  <div id="menu-item-1" class="menu-item trigger-about-us" data-target="about-us" data-cube="front">
     <div class="label"> about us</div>
     <div class="icon"><i class="fas fa-users"></i></div>
   </div>
 
   <!-- what we do -->
-  <div id="menu-item-2" class="menu-item">
+  <div id="menu-item-2" class="menu-item trigger-what-we-do" data-target="what-we-do" data-cube="top">
     <div class="label"> what we do</div>
     <div class="icon"><i class="fas fa-paint-brush"></i></div>
   </div>
 
   <!-- showcase -->
-  <div id="menu-item-3" class="menu-item">
-    <div class="label"> showcase</div>
+  <div id="menu-item-3" class="menu-item trigger-showcase" data-target="showcase" data-cube="bottom">
+  <div class="label"> showcase</div>
     <div class="icon"><i class="fas fa-th"></i></div>
   </div>
 
   <!-- sticker shop -->
-  <div id="menu-item-4" class="menu-item">
+  <div id="menu-item-4" class="menu-item trigger-sticker-shop" data-target="sticker-shop" data-cube="left">
     <div class="label"> sticker shop</div>
     <div class="icon"><i class="fas fa-shopping-cart"></i></div>
   </div>
 
   <!-- events -->
-  <div id="menu-item-5" class="menu-item">
-    <div class="label"> events</div>
+  <div id="menu-item-5" class="menu-item trigger-events" data-target="events" data-cube="right">
+  <div class="label"> events</div>
     <div class="icon"><i class="fas fa-calendar-alt"></i></div>
   </div>
 
   <!-- contact -->
-  <div id="menu-item-6" class="menu-item">
+  <div id="menu-item-6" class="menu-item trigger-contact" data-target="contact" data-cube="back">
     <div class="label"> contact</div>
     <div class="icon"><i class="fas fa-envelope"></i></div>
   </div>
@@ -301,6 +344,10 @@
     </details>
   </details>
 </div>
+
+
+
+
 
 <script src="bundle.js"></script>
 <script src="vendor/fontawesome/all.min.js"></script>
