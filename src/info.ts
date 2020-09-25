@@ -1,27 +1,10 @@
-const medias = {
-  mobile: {
-    name: 'Mobile',
-    icon: 'fa-mobile-alt'
-  },
-  tablet: {
-    name: 'Tablet',
-    icon: 'fa-tablet-alt'
-  },
-  desktop: {
-    name: 'Desktop',
-    icon: 'fa-desktop'
-  },
-  large: {
-    name: 'Large',
-    icon: 'fa-desktop'
-  }
-}
+import * as mediaQueries from './MediaQueries.json'
 
-enum mediaQuery {
-  Mobile, // 576
-  Tablet, // 768
-  Desktop, // 992
-  Large// 1200
+interface MediaQuery {
+  label: string
+  name: string
+  icon: string
+  maxWidth: number
 }
 
 interface ScreenSize {
@@ -29,20 +12,19 @@ interface ScreenSize {
   y: number
 }
 
-interface Medias {
-  name: string
-  icon: string
-}
 
 class Info {
   screenSize: ScreenSize
-  mediaQuery: mediaQuery | undefined
+  mediaQuery: MediaQuery | undefined
   resizeTimer: any
+  mediaQueries: MediaQuery[]
 
   constructor() {
     console.log('Info loaded')
+
+    this.mediaQueries = Object.values(mediaQueries) // Convert Module to Array
     this.screenSize = {x: 0, y: 0}
-    this.mediaQuery = undefined
+    this.mediaQuery = Info.getMediaQuery()
 
     this.init()
   }
@@ -54,29 +36,24 @@ class Info {
     return {x: width, y: height}
   }
 
-  public static mediaQueryStringString(media: mediaQuery): string {
-    // Convert global Medias to array and get Item with Index from media
-    return Object.values(medias)[media].name
-  }
 
-  public static mediaQueryStringIcon(media: mediaQuery): string {
-    // Convert global Medias to array and get Item with Index from media
-    const iconName = Object.values(medias)[media].icon
-    return '<i class="fas ' + iconName + '"></i>'
-  }
-
-  public static getMediaQuery(): mediaQuery {
+  public static getMediaQuery(): MediaQuery {
     const width = window.innerWidth
 
-    if (width <= 576) {
-      return mediaQuery.Mobile
-    } else if (width <= 768) {
-      return mediaQuery.Tablet
-    } else if (width <= 992) {
-      return mediaQuery.Desktop
-    } else {
-      return mediaQuery.Large
+    // if Screen resolution is bigger then 1200px
+    // return MediaQuery "large"
+    if (width > 1200) {
+      return mediaQueries[3]
     }
+
+    // Get MediaQuery with appropriate resolution
+    return mediaQueries.filter(mediaQuery => {
+      console.log(mediaQuery.label + '   - ' + width)
+      if (width <= mediaQuery.maxWidth) {
+        return mediaQuery
+      }
+    })[0]
+
   }
 
   private resizeEvent(): void {
@@ -84,9 +61,10 @@ class Info {
     this.resizeTimer = setTimeout(() => {
       const screen = Info.getScreenSize()
       const media = Info.getMediaQuery()
+      Info.updateSettingsPanel(screen, media)
+
       this.screenSize = {x: screen.x, y: screen.y}
       this.mediaQuery = media
-      Info.updateSettingsPanel(screen, media)
     }, 250)
   }
 
@@ -98,14 +76,17 @@ class Info {
     window.addEventListener("resize", this.resizeEvent)
   }
 
-  private static updateSettingsPanel(screen: ScreenSize, media: mediaQuery) {
+  private static updateSettingsPanel(screen: ScreenSize, media: MediaQuery) {
+
+    // Get Elements in Dom
     const containerScreen = document.querySelector('.display-screen-size')
     const containerMediaQuery = document.querySelector('.display-media-query')
+
+    // Update Elements
     containerScreen.innerHTML = '<span class="x-label">x</span>' + screen.x + '<span class="y-label">y</span>' + screen.y
-    containerMediaQuery.innerHTML = '<span class="media-icon">'
-      + Info.mediaQueryStringIcon(media)
-      + '</span>'
-      + Info.mediaQueryStringString(media)
+    containerMediaQuery.innerHTML =
+      '<span class="media-icon"><i class="fas '+ media.icon + '"></i></span>'
+      + media.label
   }
 
 }
