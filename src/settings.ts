@@ -92,8 +92,4 @@ buttonMenuPlay.addEventListener("click", mainMenuPlay)
 buttonMenuPause.addEventListener("click", mainMenuPause)
 
 
-// Init
-containerMediaQuery.innerHTML = 'x: 1000 y:1000'
-containerMediaQuery.innerHTML = 'Desktop'
-
 // Helpers

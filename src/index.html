@@ -235,39 +235,41 @@
   <details open class="main-details">
     <!-- Header -->
     <summary>
-        <span class="settings-main-title">Glanzstück Demo</span>
-        <span class="settings-version"> v1</span>
+      <span class="settings-main-title">Glanzstück Demo</span>
+      <span class="settings-version"> v1</span>
     </summary>
 
 
     <!-- Settings-->
     <details open>
-      <summary> Settings </summary>
+      <summary> Settings</summary>
 
-    <ul class="settings-list">
-      <!-- Debug Mode -->
-      <li class="settings-list-item checkbox">
-        <input type="checkbox" name="debug-mode" id="debug-mode">
-        <label for="debug-mode">Debug Mode</label>
-      </li>
+      <ul class="settings-list">
+        <!-- Animations -->
+        <li class="settings-list-item checkbox">
+          <input type="checkbox" name="show-animations" id="label" checked>
+          <label for="label">Show Animations</label>
+        </li>
 
-      <!-- Animate Background -->
-      <li class="settings-list-item checkbox">
-        <input type="checkbox" name="animate-background" id="animate-background">
-        <label for="animate-background">Animate Background</label>
-      </li>
+        <!-- Debug Mode -->
+        <li class="settings-list-item checkbox">
+          <input type="checkbox" name="debug-mode" id="debug-mode">
+          <label for="debug-mode">Debug Mode</label>
+        </li>
 
-      <!-- Label -->
-      <li class="settings-list-item checkbox">
-        <input type="checkbox" name="label" id="label">
-        <label for="label">Label</label>
-      </li>
-    </ul>
+        <!-- Animate Background -->
+        <li class="settings-list-item checkbox">
+          <input type="checkbox" name="animate-background" id="animate-background">
+          <label for="animate-background">Animate Background</label>
+        </li>
+
+      </ul>
+      <hr class="settings-divider">
     </details>
 
     <!-- Animation Controll-->
     <details open>
-      <summary> Animation Controll </summary>
+      <summary> Animation Controll</summary>
       <div class="settings-toolbar">
         <div role="button" class="settings-button main-menu-restart">Restart</div>
         <div role="button" class="settings-button main-menu-play">Play</div>
@@ -280,20 +282,22 @@
           <label for="slow-down-animation">Slow Down Animation</label>
         </li>
       </ul>
+      <hr class="settings-divider">
     </details>
 
     <!-- Info-->
     <details open>
-    <summary>Info</summary>
-    <ul>
-      <li>
-        <span class="label">Screen:</span>
-        <span class="value display-screen-size">x: 1000  y: 1000</span>
-      </li>
-      <li><span class="label">Media:</span>
-        <span class="value display-media-query">Desktop</span>
-      </li>
-    </ul>
+      <summary>Info</summary>
+      <ul>
+        <li>
+          <span class="label">Screen:</span>
+          <span class="value display-screen-size"><span class="x-label">x</span>0<span class="y-label">y</span>0</span>
+        </li>
+        <li><span class="label">Media:</span>
+          <span class="value display-media-query">–</span>
+        </li>
+      </ul>
+      <hr class="settings-divider">
     </details>
   </details>
 </div>

@@ -1,6 +1,7 @@
 $background: rgb(29, 29, 29);
 $line: #404040;
 $text: #999;
+$label: #616161;
 $text-hover: #e3e3e3;
 $title: #e0e0e0;
 $accent: #279AA2;
@@ -19,11 +20,14 @@ $check: #1ad0dc;
   min-width: 250px;
   border-radius: 10px;
   box-shadow: 3px 3px 16px 3px rgba(0, 0, 0, 0.2);
-
-
+  z-index: 100;
 
   summary {
     cursor: pointer;
+  }
+
+  summary::-webkit-details-marker {
+    display: none
   }
 
   ul, li {
@@ -46,6 +50,7 @@ $check: #1ad0dc;
     appearance: none;
     box-shadow: none;
     background-color: $text;
+    border-radius: 10px;
   }
 
   input[type='checkbox']:checked {
@@ -79,11 +84,7 @@ $check: #1ad0dc;
   margin: 0 20px;
 }
 
-#settings details {
-  padding-bottom: 10px;
-  border-bottom: solid 1px $line;
-  margin-bottom: 10px;
-}
+
 
 #settings summary,
 .settings-title {
@@ -92,7 +93,7 @@ $check: #1ad0dc;
   text-transform: uppercase;
   font-size: 0.9em;
   font-weight: 400;
-  padding: 3px 0 ;
+  padding: 3px 0;
 }
 
 hr.settings-divider {
@@ -138,7 +139,8 @@ div.settings-button {
 
 #settings details.main-details {
   border-bottom: none;
-  summary{
+
+  summary {
     margin-bottom: 10px;
   }
 }
@@ -148,4 +150,19 @@ div.settings-button {
   color: $accent;
   text-transform: uppercase;
   display: inline-block;
+}
+
+.x-label,
+.y-label {
+  color: $label;
+  padding-right: 3px;
+}
+
+.y-label {
+  margin-left: 10px;
+}
+
+.media-icon {
+  color: $label;
+  margin-right: 10px;
 }
