@@ -1,23 +1,17 @@
-// @ts-ignore
 import {gsap} from "gsap"
-// @ts-ignore
 import {MotionPathPlugin} from 'gsap/MotionPathPlugin'
 
 gsap.registerPlugin(MotionPathPlugin)
 
-// read screensize
-const ww = window.innerWidth
-const wh = window.innerHeight
 
 // Menu Item List
 const MainMenuItems = gsap.utils.toArray('.menu-item')
-
-
+let slowDownAnimation = false
 // Convert Circle To Path
 MotionPathPlugin.convertToPath('#menu-circle')
 
 
-// Animation Function for all MainMenuItems
+// Animation Function for all MenuItems in Main Menu
 const menuAnimation = function (endPoint: any, duration: any) {
   return {
     duration: duration,
@@ -33,7 +27,7 @@ const menuAnimation = function (endPoint: any, duration: any) {
 }
 
 // Timeline for all Menu Items
-const menuTimeline = gsap.timeline({repeat: 0, repeatDelay: 1, transformOrigin: "0% 50%"})
+const menuTimeline = gsap.timeline({repeat: 0, repeatDelay: 0, delay: 0, transformOrigin: "0% 50%"})
 
 
 // Add Animation to Menu Items
@@ -63,9 +57,6 @@ menuTimeline
   .to("#menu-item-1", menuAnimation(-0.14, 2), 0.2)
 
 
-let resizeTimer: any
-
-
 function toggleMainMenuItems() {
   MainMenuItems.forEach((item: HTMLElement) => {
     const style = item.getAttribute('style')
@@ -91,20 +82,20 @@ function showMainMenuItems() {
 }
 
 function animateMainMenu() {
-  const ww = window.innerWidth
-  const wh = window.innerHeight
-
-  console.log('resize', ww + ' / ' + wh)
   showMainMenuItems()
   menuTimeline.invalidate()
   menuTimeline.play(0)
-  // location.reload();
 }
+
+
+/**
+ * resizeCheck
+ *
+ */
+let resizeTimer: any
 
 function resizeCheck() {
   hideMainMenuItems()
-
-
   clearTimeout(resizeTimer)
   resizeTimer = setTimeout(function () {
     animateMainMenu()
@@ -113,8 +104,57 @@ function resizeCheck() {
 
 window.addEventListener("resize", resizeCheck)
 
-import  './settings'
+import './settings'
 import Info from './info'
 
 let info = new Info()
 
+
+
+// Slowdown Menu Animation
+const toggleSlowDownAnimation = function (event: any) {
+  if (event.target.checked) {
+    console.log('Slow Down Animation: ON')
+    slowDownAnimation = true
+    menuTimeline.timeScale(0.1)
+  } else {
+    console.log('Slow Down Animation:  OFF')
+    slowDownAnimation = false
+    menuTimeline.timeScale(1)
+
+  }
+}
+
+// Menu Animation Control
+const mainMenuRestart = function () {
+  console.log('mainMenuRestart')
+  showMainMenuItems()
+  menuTimeline.invalidate()
+
+  // Bypass to large delay in Slowdown Animation
+  let from = slowDownAnimation ? 0.18 : 0
+  menuTimeline.play(from)
+}
+
+const mainMenuPlay = function () {
+  console.log('mainMenuPlay')
+  menuTimeline.play()
+
+}
+
+const mainMenuPause = function () {
+  console.log('mainMenuPause')
+  menuTimeline.pause()
+
+}
+// Settings Controls
+const buttonMenuRestart = document.querySelector('.main-menu-restart')
+const buttonMenuPlay = document.querySelector('.main-menu-play')
+const buttonMenuPause = document.querySelector('.main-menu-pause')
+const checkBoxSlowDownAnimation = document.getElementById('slow-down-animation')
+
+// Add Listeners
+checkBoxSlowDownAnimation.addEventListener("change", toggleSlowDownAnimation, false)
+buttonMenuRestart.addEventListener("click", mainMenuRestart)
+buttonMenuPlay.addEventListener("click", mainMenuPlay)
+buttonMenuPause.addEventListener("click", mainMenuPause)
