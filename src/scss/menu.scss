@@ -1,12 +1,13 @@
-$background: #2C2C2C;
-$line: #505050;
-$text: #e7e7e7;
+$background: rgb(26, 26, 26);
+$line: rgba(255, 255, 255, 0.2);
+$text: #ffffff;
 $accent: #279AA2;
 
 body {
   font-family: 'Barlow', Roboto, sans-serif;
   color: $text;
-  background-color: $background;
+//  background-color: $background;
+
 }
 
 h1.demo-title {
@@ -18,6 +19,7 @@ h1.demo-title {
 }
 
 .logo-container {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,6 +88,7 @@ h1.demo-title {
   width: 200px;
   margin: auto;
   visibility: visible;
+  opacity: 0;
 
   .icon {
     display: flex;
@@ -129,6 +132,15 @@ h1.demo-title {
 }
 
 
+#preview-about-us{
+  .front-image{
+    padding-top: 150px;
+    margin-left: -70px;
+  }
+}
+
+
+
 // Debug Mode
 
 body.debug {
@@ -146,5 +158,11 @@ body.debug {
     border: 1px solid $line; /* Debug */
   }
 
+  ._3dface{
+    border: 1px solid rgb(98, 69, 123); /* Debug */
+  }
+
+
 }
 @import "preview";
+@import "background";

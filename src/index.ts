@@ -15,6 +15,7 @@ MotionPathPlugin.convertToPath('#menu-circle')
 const menuAnimation = function (endPoint: any, duration: any) {
   return {
     duration: duration,
+    opacity:1,
     ease: "expo",
     motionPath: {
       path: "#menu-circle",
