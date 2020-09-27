@@ -87,8 +87,8 @@ h1.demo-title {
   z-index: 10;
   width: 200px;
   margin: auto;
-  visibility: visible;
-  opacity: 0;
+  visibility: hidden;
+  // opacity: 0;
 
   .icon {
     display: flex;

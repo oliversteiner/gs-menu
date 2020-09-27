@@ -1,23 +1,24 @@
-// Load Menu
-import Menu from "./ts/menu";
-const menu = new Menu()
+import MainMenu from "./ts/mainMenu";
+import Settings from './ts/settings'
+import Info from './ts/info'
+import Preview from './ts/preview'
 
+// Load Menu
+let mainMenu: MainMenu;
+mainMenu = new MainMenu();
 
 // Load Settings
-import Settings from './ts/settings'
-const settingsPanel = new Settings()
-
-// Add Listeners for Menu control to settingsPanel
-settingsPanel.elems.checkBoxSlowDownAnimation.addEventListener("change", menu.toggleSlowDownAnimation, false)
-settingsPanel.elems.buttonMenuRestart.addEventListener("click", menu.mainMenuRestart)
-settingsPanel.elems.buttonMenuPlay.addEventListener("click", menu.mainMenuPlay)
-settingsPanel.elems.buttonMenuPause.addEventListener("click", menu.mainMenuPause)
-
+let settingsPanel: Settings;
+settingsPanel = new Settings();
 
 // load Info
-import Info from './ts/info'
-const info = new Info()
+let info: Info;
+info = new Info();
 
 // load preview
-import Preview from './ts/preview'
-const preview = new Preview()
+let preview: Preview;
+preview = new Preview();
+
+
+// Start Menu animation
+MainMenu.play();

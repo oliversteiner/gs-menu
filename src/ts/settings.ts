@@ -13,23 +13,21 @@ interface State {
 }
 
 class Settings {
-  public elems: any
-
 
   constructor() {
     console.log('Settings loaded')
-    this.elems = this.registerElems()
-    this.addListeners()
+    Settings.addListeners()
   }
 
-  addListeners() {
+  private static addListeners() {
     // Add Listeners
-    this.elems.checkBoxDebugMode.addEventListener("change", this.toggleDebugMode, false)
-    this.elems.checkBoxAnimateBackground.addEventListener("change", this.toggleAnimateBackground, false)
-    this.elems.checkBoxDefaultCheckbox.addEventListener("change", this.checkboxAction, false)
+    const elems = Settings.elems()
+    elems.checkBoxDebugMode.addEventListener("change", Settings.toggleDebugMode, false)
+    elems.checkBoxAnimateBackground.addEventListener("change", Settings.toggleAnimateBackground, false)
+    elems.checkBoxDefaultCheckbox.addEventListener("change", Settings.checkboxAction, false)
   }
 
-  registerElems() {
+ public static elems() {
 
     // Settings
     const checkBoxDebugMode = document.getElementById('debug-mode')
@@ -63,7 +61,7 @@ class Settings {
   }
 
 // Debug Mode
-  private toggleDebugMode(event: any) {
+  private static toggleDebugMode(event: any) {
     if (event.target.checked) {
       document.body.classList.add('debug')
       SettingsState.debugMode = true
@@ -76,7 +74,7 @@ class Settings {
   }
 
 // Animate Background
-  private toggleAnimateBackground(event: any) {
+  private static toggleAnimateBackground(event: any) {
     if (event.target.checked) {
       console.log('Animate Background: ON')
     } else {
@@ -86,7 +84,7 @@ class Settings {
 
 
 // Checkbox Template
-  private checkboxAction(event: any) {
+  private static checkboxAction(event: any) {
     if (event.target.checked) {
       console.log('Action: ON')
     } else {
