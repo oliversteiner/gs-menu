@@ -15,6 +15,7 @@ MotionPathPlugin.convertToPath('#menu-circle')
 const menuAnimation = function (endPoint: any, duration: any) {
   return {
     duration: duration,
+    opacity:1,
     ease: "expo",
     motionPath: {
       path: "#menu-circle",
@@ -27,31 +28,31 @@ const menuAnimation = function (endPoint: any, duration: any) {
 }
 
 // Timeline for all Menu Items
-const menuTimeline = gsap.timeline({repeat: 0, repeatDelay: 0, delay: 0, transformOrigin: "0% 50%"})
+const menuTimeline = gsap.timeline({repeat: 0, repeatDelay: 0, delay: 0.5, transformOrigin: "0% 50%"})
 
 
 // Add Animation to Menu Items
 menuTimeline
   // 8 - facebook
-  .to("#menu-item-8", menuAnimation(-0.87, 1), 0.2)
+  .to("#menu-item-8", menuAnimation(-0.87, 2), 0.2)
 
   // 7 - instagram
-  .to("#menu-item-7", menuAnimation(-0.82, 1), 0.2)
+  .to("#menu-item-7", menuAnimation(-0.82, 2), 0.2)
 
   // 6 - contact
-  .to("#menu-item-6", menuAnimation(-0.42, 1), 0.2)
+  .to("#menu-item-6", menuAnimation(-0.42, 2), 0.2)
 
   // 5 - events
-  .to("#menu-item-5", menuAnimation(-0.38, 1), 0.2)
+  .to("#menu-item-5", menuAnimation(-0.38, 2), 0.2)
 
   // 4 - sticker shop
-  .to("#menu-item-4", menuAnimation(-0.26, 1), 0.2)
+  .to("#menu-item-4", menuAnimation(-0.26, 2), 0.2)
 
   // 3 - showcase
-  .to("#menu-item-3", menuAnimation(-0.22, 1), 0.2)
+  .to("#menu-item-3", menuAnimation(-0.22, 2), 0.2)
 
   // 2 - what we do
-  .to("#menu-item-2", menuAnimation(-0.18, 1.5), 0.2)
+  .to("#menu-item-2", menuAnimation(-0.18, 2.5), 0.2)
 
   // 1 - about us
   .to("#menu-item-1", menuAnimation(-0.14, 2), 0.2)

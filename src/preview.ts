@@ -39,7 +39,10 @@ class Preview {
     triggers.forEach((elem: HTMLElement) => {
       elem.addEventListener("mouseenter", (event: MouseEvent) => {
         this.show(event)
-      })
+      }),
+        elem.addEventListener("click", (event: MouseEvent) => {
+          this.show(event)
+        })
     })
   }
 
