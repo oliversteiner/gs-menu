@@ -1,4 +1,3 @@
-console.log('Settings loaded')
 const SettingsState: State = {
   debugMode: false,
   animateBackground: false,
@@ -18,6 +17,7 @@ class Settings {
 
 
   constructor() {
+    console.log('Settings loaded')
     this.elems = this.registerElems()
     this.addListeners()
   }

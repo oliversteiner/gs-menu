@@ -1,4 +1,4 @@
-import * as mediaQueries from './MediaQueries.json'
+import * as mediaQueries from '../data/MediaQueries.json'
 
 interface MediaQuery {
   label: string
