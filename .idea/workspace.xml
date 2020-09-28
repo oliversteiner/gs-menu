@@ -10,10 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3deaf8c-356a-4e0e-ae7a-817befd71f6e" name="Default Changelist" comment="refactor MainMenu to (static) class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ts/settings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/settings.ts" afterDir="false" />
+    <list default="true" id="a3deaf8c-356a-4e0e-ae7a-817befd71f6e" name="Default Changelist" comment="add .idea to .gitignore">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +115,7 @@
       <workItem from="1601211731216" duration="598000" />
       <workItem from="1601240091909" duration="5716000" />
       <workItem from="1601328874393" duration="528000" />
+      <workItem from="1601329441269" duration="6693000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1600823091208</created>
@@ -279,7 +278,49 @@
       <option name="project" value="LOCAL" />
       <updated>1601246034800</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="clean up">
+      <created>1601329513345</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1601329513345</updated>
+    </task>
+    <task id="LOCAL-00025" summary="other modules can now add new sections to settings panel">
+      <created>1601336175629</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1601336175629</updated>
+    </task>
+    <task id="LOCAL-00026" summary="refactor setting panel functions">
+      <created>1601336210148</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1601336210148</updated>
+    </task>
+    <task id="LOCAL-00027" summary="clean up settings panel">
+      <created>1601336225477</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1601336225477</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add .idea to .gitignore">
+      <created>1601336308577</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1601336308577</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add .idea to .gitignore">
+      <created>1601336314819</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1601336314819</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +341,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="init" />
     <MESSAGE value="add SCSS file watcher to webpack" />
     <MESSAGE value="First Item Animation ok" />
     <MESSAGE value="3 Items OK" />
@@ -321,7 +361,12 @@
     <MESSAGE value="slow Down animation" />
     <MESSAGE value="moved code of mainMenu from index.ts to menu.ts" />
     <MESSAGE value="refactor MainMenu to (static) class" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor MainMenu to (static) class" />
+    <MESSAGE value="clean up" />
+    <MESSAGE value="other modules can now add new sections to settings panel" />
+    <MESSAGE value="refactor setting panel functions" />
+    <MESSAGE value="clean up settings panel" />
+    <MESSAGE value="add .idea to .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .idea to .gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="174" y="324" key="#SCSS_Lint" timestamp="1600820053801">
@@ -369,10 +414,10 @@
     </state>
     <state x="0" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1601328889469" />
     <state x="0" y="147" key="SettingsEditor/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600864118626" />
-    <state x="500" y="300" key="Vcs.Push.Dialog.v2" timestamp="1601246445288">
+    <state x="500" y="300" key="Vcs.Push.Dialog.v2" timestamp="1601336089472">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="500" y="300" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1601246445288" />
+    <state x="500" y="300" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1601336089472" />
     <state x="888" y="471" key="Vcs.Push.Dialog.v2/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1601057354538" />
     <state x="124" y="123" width="2328" height="1217" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600865189880">
       <screen x="0" y="23" width="2560" height="1417" />
