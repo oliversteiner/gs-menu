@@ -45,7 +45,11 @@ class Settings {
     const containerScreen = document.querySelector('.display-screen-size')
     const containerMediaQuery = document.querySelector('.display-media-query')
 
-    return {
+     // Other
+     const other = document.querySelector('.settings-other')
+
+
+     return {
       checkBoxDebugMode: checkBoxDebugMode,
       checkBoxAnimateBackground: checkBoxAnimateBackground,
       checkBoxDefaultCheckbox: checkBoxDefaultCheckbox,
@@ -54,11 +58,14 @@ class Settings {
       buttonMenuPause: buttonMenuPause,
       checkBoxSlowDownAnimation: checkBoxSlowDownAnimation,
       containerScreen: containerScreen,
-      containerMediaQuery: containerMediaQuery
+         containerMediaQuery: containerMediaQuery,
+         other: other
     }
 
 
   }
+
+
 
 // Debug Mode
   private static toggleDebugMode(event: any) {

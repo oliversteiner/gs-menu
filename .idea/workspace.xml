@@ -10,11 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3deaf8c-356a-4e0e-ae7a-817befd71f6e" name="Default Changelist" comment="moved code of mainMenu from index.ts to menu.ts">
+    <list default="true" id="a3deaf8c-356a-4e0e-ae7a-817befd71f6e" name="Default Changelist" comment="refactor MainMenu to (static) class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ts/menu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/mainMenu.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ts/settings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/settings.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +61,7 @@
     <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -118,6 +116,7 @@
       <workItem from="1601123588470" duration="2019000" />
       <workItem from="1601211731216" duration="598000" />
       <workItem from="1601240091909" duration="5716000" />
+      <workItem from="1601328874393" duration="528000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1600823091208</created>
@@ -273,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601242024152</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="refactor MainMenu to (static) class">
+      <created>1601246034800</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1601246034800</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -314,7 +320,8 @@
     <MESSAGE value="3DCube for Content Preview" />
     <MESSAGE value="slow Down animation" />
     <MESSAGE value="moved code of mainMenu from index.ts to menu.ts" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved code of mainMenu from index.ts to menu.ts" />
+    <MESSAGE value="refactor MainMenu to (static) class" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor MainMenu to (static) class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="174" y="324" key="#SCSS_Lint" timestamp="1600820053801">
@@ -357,14 +364,15 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1024" y="441" key="RollbackChangesDialog/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600865114197" />
-    <state x="0" y="100" key="SettingsEditor" timestamp="1601240227980">
+    <state x="0" y="100" key="SettingsEditor" timestamp="1601328889469">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="0" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1601240227980" />
+    <state x="0" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1601328889469" />
     <state x="0" y="147" key="SettingsEditor/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1600864118626" />
-    <state x="888" y="471" key="Vcs.Push.Dialog.v2" timestamp="1601057354538">
-      <screen x="0" y="23" width="2560" height="1417" />
+    <state x="500" y="300" key="Vcs.Push.Dialog.v2" timestamp="1601246445288">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
+    <state x="500" y="300" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1601246445288" />
     <state x="888" y="471" key="Vcs.Push.Dialog.v2/2560.23.2560.1417/0.23.2560.1417@0.23.2560.1417" timestamp="1601057354538" />
     <state x="124" y="123" width="2328" height="1217" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600865189880">
       <screen x="0" y="23" width="2560" height="1417" />
