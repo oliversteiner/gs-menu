@@ -10,9 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3deaf8c-356a-4e0e-ae7a-817befd71f6e" name="Default Changelist" comment="clean up settings panel">
+    <list default="true" id="a3deaf8c-356a-4e0e-ae7a-817befd71f6e" name="Default Changelist" comment="add .idea to .gitignore">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +115,7 @@
       <workItem from="1601211731216" duration="598000" />
       <workItem from="1601240091909" duration="5716000" />
       <workItem from="1601328874393" duration="528000" />
-      <workItem from="1601329441269" duration="6644000" />
+      <workItem from="1601329441269" duration="6693000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1600823091208</created>
@@ -307,7 +306,21 @@
       <option name="project" value="LOCAL" />
       <updated>1601336225477</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add .idea to .gitignore">
+      <created>1601336308577</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1601336308577</updated>
+    </task>
+    <task id="LOCAL-00029" summary="add .idea to .gitignore">
+      <created>1601336314819</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1601336314819</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +341,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="init" />
     <MESSAGE value="add SCSS file watcher to webpack" />
     <MESSAGE value="First Item Animation ok" />
     <MESSAGE value="3 Items OK" />
@@ -353,7 +365,8 @@
     <MESSAGE value="other modules can now add new sections to settings panel" />
     <MESSAGE value="refactor setting panel functions" />
     <MESSAGE value="clean up settings panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up settings panel" />
+    <MESSAGE value="add .idea to .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add .idea to .gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="174" y="324" key="#SCSS_Lint" timestamp="1600820053801">
