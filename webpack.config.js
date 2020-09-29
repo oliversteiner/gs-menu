@@ -45,6 +45,7 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 { from: 'src/index.html', to: '../dist/index.html' },
+                { from: 'src/images', to: '../dist/images' },
                 { from: 'node_modules/@fortawesome/fontawesome-free/js/all.min.js', to: '../dist/vendor/fontawesome/all.min.js' },
             ],
         }),

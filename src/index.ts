@@ -1,24 +1,29 @@
-import MainMenu from "./ts/mainMenu";
+import MainMenu from "./ts/mainMenu"
 import Settings from './ts/settings'
 import Info from './ts/info'
 import Preview from './ts/preview'
-
-// Load Menu
-let mainMenu: MainMenu;
-mainMenu = new MainMenu();
+import Fps from "./ts/fps"
 
 // Load Settings
-let settingsPanel: Settings;
-settingsPanel = new Settings();
+let settingsPanel: Settings
+settingsPanel = new Settings()
+
+let fps: Fps
+fps = new Fps()
+
+// Load Menu
+let mainMenu: MainMenu
+mainMenu = new MainMenu()
+
 
 // load Info
-let info: Info;
-info = new Info();
+let info: Info
+info = new Info()
 
 // load preview
-let preview: Preview;
-preview = new Preview();
+let preview: Preview
+preview = new Preview()
 
 
 // Start Menu animation
-MainMenu.play();
+MainMenu.play()
