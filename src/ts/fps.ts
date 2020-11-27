@@ -24,7 +24,7 @@ class Fps {
     console.log("FPS loaded");
     this.buildSettingsSection();
     this.updateSettings(0, "normal");
-     // this.refreshLoop()
+    this.refreshLoop()
   }
 
   private buildSettingsSection() {
