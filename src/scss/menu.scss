@@ -10,159 +10,165 @@ body {
 
 }
 
-h1.demo-title {
-  display: inline-block;
-  font-weight: 300;
-  left: 50px;
-  top: 50px;
-  font-size: 1.1em;
-}
+#glanzstueck-front-block {
 
-.logo-container {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  svg {
-    margin: auto;
-    display: block;
+  h1.demo-title {
+    display: inline-block;
+    font-weight: 300;
+    left: 50px;
+    top: 50px;
+    font-size: 1.1em;
   }
 
-}
-
-#gs-logo-container {
-  z-index: 20;
-}
-
-#gs-headline {
-  height: 100px;
-  width: 356px;
-
-  svg {
-    margin-top: 50px;
-    transform: scale(1.2);
-  }
-}
-
-#circle-container {
-  // border: 1px solid #dedede; /* Debug */
-}
-
-.hide-menu-items {
-  display: revert;
-  position: relative;
-}
-
-#menu-circle {
-  stroke: none;
-  fill: none;
-}
-
-#background-oval-1 {
-  stroke: $line;
-  fill: none;
-}
-
-#background-oval-2 {
-  stroke: $line;
-  fill: none;
-}
-
-.menu-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: -250px;
-  position: relative;
-}
-
-
-.menu-item {
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  font-weight: 300;
-  z-index: 10;
-  width: 200px;
-  margin: auto;
-  visibility: hidden;
-  // opacity: 0;
-
-  .icon {
+  .logo-container {
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 60px;
-    border: 1px solid $line;
-    font-size: 25px;
-    color: $text;
 
 
   }
 
-  .label {
+  #gs-logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 250px;
+    z-index: 20;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  #gs-headline {
+    height: 100px;
+    width: 356px;
+
+    svg {
+      margin-top: 50px;
+      transform: scale(1.2);
+    }
+  }
+
+  #circle-container {
+    // border: 1px solid #dedede; /* Debug */
+  }
+
+  .hide-menu-items {
+    display: revert;
     position: relative;
-    width: 100px;
-    right: 10px;
-    text-align: right;
   }
-
-}
-
-.menu-item:hover {
-  cursor: pointer;
-
-  .icon {
-    background-color: white;
-    color: #2C2C2C;
-  }
-}
-
-.menu-item:active {
-  cursor: pointer;
-
-  .icon {
-    background-color: $accent;
-    color: white;
-  }
-}
-
-
-#preview-about-us{
-  .front-image{
-    padding-top: 150px;
-    margin-left: -70px;
-  }
-}
-
-
-
-// Debug Mode
-
-body.debug {
 
   #menu-circle {
-    stroke: gold;
+    stroke: none;
     fill: none;
   }
 
+  #background-oval-1 {
+    stroke: $line;
+    fill: none;
+  }
+
+  #background-oval-2 {
+    stroke: $line;
+    fill: none;
+  }
+
+  .menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -250px;
+    position: relative;
+  }
+
+
   .menu-item {
-    border: 1px solid $line; /* Debug */
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    z-index: 10;
+    width: 200px;
+    margin: auto;
+    visibility: hidden;
+    // opacity: 0;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 60px;
+      border: 1px solid $line;
+      font-size: 25px;
+      color: $text;
+
+
+    }
+
+    .label {
+      position: relative;
+      width: 100px;
+      right: 10px;
+      text-align: right;
+    }
+
   }
 
-  #menu-item-container {
-    border: 1px solid $line; /* Debug */
+  .menu-item:hover {
+    cursor: pointer;
+
+    .icon {
+      background-color: white;
+      color: #2C2C2C;
+    }
   }
 
-  ._3dface{
-    border: 1px solid rgb(98, 69, 123); /* Debug */
+  .menu-item:active {
+    cursor: pointer;
+
+    .icon {
+      background-color: $accent;
+      color: white;
+    }
   }
 
+
+  #preview-about-us {
+    .front-image {
+      padding-top: 150px;
+      margin-left: -70px;
+    }
+  }
+
+
+  // Debug Mode
+
+  body.debug {
+
+    #menu-circle {
+      stroke: gold;
+      fill: none;
+    }
+
+    .menu-item {
+      border: 1px solid $line; /* Debug */
+    }
+
+    #menu-item-container {
+      border: 1px solid $line; /* Debug */
+    }
+
+    ._3dface {
+      border: 1px solid rgb(98, 69, 123); /* Debug */
+    }
+
+
+  }
 
 }
 @import "preview";
-@import "background";

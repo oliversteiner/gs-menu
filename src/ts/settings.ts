@@ -17,7 +17,7 @@ class Settings {
     constructor() {
         console.log('Settings loaded')
         Settings.addListeners()
-        Settings.testAddSection()
+     //   Settings.testAddSection()
     }
 
     public static testAddSection() {

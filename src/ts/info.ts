@@ -1,3 +1,4 @@
+// @ts-ignore
 import * as mediaQueries from '../data/MediaQueries.json'
 import Settings from "./settings";
 
