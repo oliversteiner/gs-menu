@@ -1,6 +1,7 @@
 #preview-container {
-  width: 100%;
+  width: 90vw;
   position: absolute;
+  overflow: hidden;
  // border: 1px solid #dedede; /* Debug */
   display: flex;
   justify-content: center;
@@ -9,11 +10,11 @@
 }
 
 .preview-center {
-  width: 700px;
-  height: 700px;
-  padding-left: 100px;
- // border: 1px solid red; /* Debug */
-
+  width: 630px;
+  height: 630px;
+  margin-left: -3vw;
+  border-radius: 300px;
+  overflow: hidden;
 }
 
 
@@ -27,7 +28,7 @@
   // height: 200px;
 }
 
-$cubeColor : #131e22;
+$cubeColor : rgb(13, 14, 14);
 
 #preview-about-us {
   background-color: $cubeColor;

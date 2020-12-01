@@ -5,11 +5,11 @@ import Preview from './ts/preview'
 import Fps from "./ts/fps"
 
 // Load Settings
-let settingsPanel: Settings
-settingsPanel = new Settings()
+// let settingsPanel: Settings
+// settingsPanel = new Settings()
 
-let fps: Fps
-fps = new Fps()
+// let fps: Fps
+// fps = new Fps()
 
 // Load Menu
 let mainMenu: MainMenu
@@ -17,8 +17,8 @@ mainMenu = new MainMenu()
 
 
 // load Info
-let info: Info
-info = new Info()
+// let info: Info
+// info = new Info()
 
 // load preview
 let preview: Preview
