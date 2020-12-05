@@ -150,7 +150,7 @@ class MainMenu {
   }
 
   private static buildSettings() {
-    const elems = Settings.elems();
+    const elems = Settings.rootElem();
     elems.checkBoxSlowDownAnimation.addEventListener(
       'change',
       MainMenu.toggleSlowDownAnimation,

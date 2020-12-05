@@ -7,7 +7,7 @@ export interface MediaQuery {
 
 class MediaQueries {
 
- private  mediaQueries: MediaQuery[]
+ private readonly mediaQueries: MediaQuery[]
 
   constructor() {
     this.mediaQueries = [
