@@ -35,8 +35,9 @@ class Info {
     const mediaQueries = MQ.getMediaQueries()
     // if Screen resolution is bigger then 1200px
     // return MediaQuery "large"
+
     if (width > 1200) {
-      return MediaQueries[3]
+      return mediaQueries.filter( mediaQuery => mediaQuery.name == 'large').shift()
     }
 
     // Get MediaQuery with appropriate resolution
@@ -45,7 +46,7 @@ class Info {
       if (width <= mediaQuery.maxWidth) {
         return mediaQuery
       }
-    })[0]
+    }).shift()
   }
 
   private resizeEvent(): void {

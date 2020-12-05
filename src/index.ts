@@ -1,3 +1,4 @@
+import Background from "./ts/background"
 import MainMenu from "./ts/mainMenu"
 import Settings from './ts/settings'
 import Info from './ts/info'
@@ -25,6 +26,9 @@ info = new Info()
 let preview: Preview
 preview = new Preview()
 
+// load background
+let background: Background
+background = new Background()
 
 // Start Menu animation
 MainMenu.play()
