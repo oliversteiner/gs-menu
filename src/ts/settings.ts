@@ -268,7 +268,16 @@ class Settings {
     }
   }
 
-  private static labelToId(label: string): string {
+  // Radio Input Action Template
+  private static radioAction(event: any) {
+    if (event.target.checked) {
+      console.log('Action: ON')
+    } else {
+      console.log('Action: OFF')
+    }
+  }
+
+  public static labelToId(label: string): string {
     const removeUmlaut = Settings.removeDiacritics(label)
     const replaceSpace = removeUmlaut.replace(/ /g, '-')
     return replaceSpace.toLowerCase()
