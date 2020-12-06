@@ -2,7 +2,7 @@
 
 $background-alter: rgb(8, 32, 40);
 
-@mixin circles($count) {
+@mixin squares($count) {
   $box-shadow: ();
   @for $i from 0 through $count {
     $box-shadow: $box-shadow,
@@ -18,12 +18,12 @@ html {
   background-color: $color-body;
 }
 
-html.background-circles {
+html.background-squares {
 
 
   body, head {
     display: block;
-    background-color: red;
+//    background-color: #26caa8;
 background-image: none;
   }
 
@@ -36,36 +36,37 @@ background-image: none;
     height: 3em;
     content: '';
     mix-blend-mode: screen;
-    animation: 440s -270s moveCircles infinite ease-in-out alternate;
+    animation: 440s -270s moveSquares infinite ease-in-out alternate;
   }
 
 
   body::before {
-    @include circles(5);
+    @include squares(5);
     animation-duration: 440s;
     animation-delay: -270s;
   }
 
   body::after {
-    @include circles(5);
+    @include squares(5);
     animation-duration: 130s;
     animation-delay: -32s;
   }
 
   head::before {
-    @include circles(5);
+    @include squares(5);
     animation-duration: 60s;
     animation-delay: -230s;
   }
 
   head::after {
-    @include circles(5);
+    @include squares(5);
+
     animation-duration: 310s;
     animation-delay: -190s;
   }
 }
 
-@keyframes moveCircles {
+@keyframes moveSquares {
   from {
     transform: rotate(0deg) scale(12) translateX(-20px);
   }

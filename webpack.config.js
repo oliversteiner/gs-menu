@@ -7,7 +7,7 @@ module.exports = {
     './src/scss/settings.scss',
     './src/scss/background-image.scss',
     './src/scss/background-circles.scss',
-    './src/scss/background-square.scss',
+    './src/scss/background-squares.scss',
   ],
   mode: 'development',
   devtool: 'inline-source-map',

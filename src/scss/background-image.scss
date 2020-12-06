@@ -1,5 +1,10 @@
 @import '_colors.scss';
 
 html {
-  background: $color-body;
+  background-color: $color-body;
+}
+
+html.background-image body{
+  background-color: $color-body;
+  background-image: url("../images/gs-background.jpg");
 }

@@ -2,7 +2,6 @@ import Settings from "./settings"
 
 
 class Background {
-  private settingsName = "Background"
   private settingsLabelImage = "Image"
   private settingsLabelSquares = "Squares"
   private settingsLabelCircles = "Circles"
@@ -14,7 +13,7 @@ class Background {
 
 
   constructor() {
-    this.modes = ['image', 'squares', 'circles']
+    this.modes = ['background-image', 'background-squares', 'background-circles']
     this.buildSettingsSection()
     this.elems = this.registerElems()
     this.addListeners()
@@ -34,16 +33,22 @@ class Background {
 
   addListeners() {
     // Add Listeners
-    this.elems.radioImage.addEventListener('change', (event: MouseEvent) =>{this.onChangeRadio(event)})
-    this.elems.radioSquares.addEventListener('change', (event: MouseEvent) =>{this.onChangeRadio(event)})
-    this.elems.radioCircles.addEventListener('change', (event: MouseEvent) =>{this.onChangeRadio(event)})
+    this.elems.radioImage.addEventListener('change', (event: MouseEvent) => {
+      this.onChangeRadio(event)
+    })
+    this.elems.radioSquares.addEventListener('change', (event: MouseEvent) => {
+      this.onChangeRadio(event)
+    })
+    this.elems.radioCircles.addEventListener('change', (event: MouseEvent) => {
+      this.onChangeRadio(event)
+    })
 
   }
 
   registerElems() {
-    const radioImage = document.getElementById( Settings.labelToId(this.settingsLabelImage))
-    const radioSquares = document.getElementById( Settings.labelToId(this.settingsLabelSquares))
-    const radioCircles = document.getElementById( Settings.labelToId(this.settingsLabelCircles))
+    const radioImage = document.getElementById(Settings.labelToId(this.settingsLabelImage))
+    const radioSquares = document.getElementById(Settings.labelToId(this.settingsLabelSquares))
+    const radioCircles = document.getElementById(Settings.labelToId(this.settingsLabelCircles))
 
     return {
       radioImage: radioImage,
@@ -54,9 +59,11 @@ class Background {
 
   private onChangeRadio(event: MouseEvent) {
     const elem = event.target as HTMLElement
-
+    const mode = elem.id
     console.log(elem.id)
-
+    const root = document.getElementsByTagName('html')[0]
+    root.classList.remove(...this.modes)
+    root.classList.add('background-' + mode)
   }
 }
 
