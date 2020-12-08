@@ -1,71 +1,71 @@
 @import "colors";
 
-$background-alter: rgb(8, 32, 40);
-
-@mixin circles($count) {
-  $box-shadow: ();
+@mixin dots($count) {
+  $text-shadow: ();
   @for $i from 0 through $count {
-    $box-shadow: $box-shadow,
-    (-.5+(random()) * 3) + em
-    (-.5+(random()) * 3) + em
-    7px
-    rgba(18,28,32,((random() * 6) * 0.1));
+    $text-shadow: $text-shadow,
+    (-.2+(random()) * 3) + em
+    (-.2+(random()) * 3) + em
+    3px
+    rgba(70,70,70,((random() * 6) * 0.1));
   }
-  box-shadow: $box-shadow;
-}
-
-html {
-  background-color: $color-body;
+  text-shadow: $text-shadow;
 }
 
 html.background-circles {
 
-
-  body, head {
-    display: block;
-    background-color: red;
-background-image: none;
-  }
-
-  head::before, head::after,
-  body::before, body::after {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 3em;
-    height: 3em;
-    content: '';
-    mix-blend-mode: screen;
-    animation: 440s -270s moveCircles infinite ease-in-out alternate;
-  }
+//  background-color: $color-body;
+  background-color: #0c0c0c;
 
 
-  body::before {
-    @include circles(5);
-    animation-duration: 440s;
-    animation-delay: -270s;
-  }
-
-  body::after {
-    @include circles(5);
-    animation-duration: 130s;
-    animation-delay: -32s;
-  }
-
-  head::before {
-    @include circles(5);
-    animation-duration: 60s;
-    animation-delay: -230s;
-  }
-
-  head::after {
-    @include circles(5);
-    animation-duration: 310s;
-    animation-delay: -190s;
-  }
+body, head {
+  display: block;
 }
 
-@keyframes moveCircles {
+head::before, head::after,
+body::before, body::after {
+  font-size: 52px;
+  font-family: Serif;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 3em;
+  height: 3em;
+  content: '.';
+  mix-blend-mode: screen;
+  animation: 440s -270s move infinite ease-in-out alternate;
+}
+
+
+body::before {
+  @include dots(40);
+  animation-duration: 440s;
+  animation-delay: -270s;
+}
+
+body::after {
+  @include dots(40);
+  animation-duration: 43s;
+  animation-delay: -32s;
+}
+
+head::before {
+  @include dots(40);
+  animation-duration: 42s;
+  animation-delay: -23s;
+}
+
+head::after {
+  @include dots(40);
+  animation-duration: 410s;
+  animation-delay: -190s;
+}
+
+
+}
+
+@keyframes move {
   from {
     transform: rotate(0deg) scale(12) translateX(-20px);
   }
