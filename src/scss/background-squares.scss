@@ -6,10 +6,7 @@ $background-alter: rgb(8, 32, 40);
   $box-shadow: ();
   @for $i from 0 through $count {
     $box-shadow: $box-shadow,
-    (-.5+(random()) * 3) + em
-    (-.5+(random()) * 3) + em
-    7px
-    rgba(18,28,32,((random() * 6) * 0.1));
+    (-.5+(random()) * 3) + em (-.5+(random()) * 3) + em 7px rgba(18, 28, 32, ((random() * 6) * 0.1));
   }
   box-shadow: $box-shadow;
 }
@@ -23,8 +20,8 @@ html.background-squares {
 
   body, head {
     display: block;
-//    background-color: #26caa8;
-background-image: none;
+    //    background-color: #26caa8;
+    background-image: none;
   }
 
   head::before, head::after,
