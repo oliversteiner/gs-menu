@@ -99,7 +99,7 @@ $cubeDepth: $cubeHeight;
 ._3dface--front {
   width: $cubeWidth;
   height: $cubeHeight;
-  transform: translate3d(0, 0, $cubeDepth / 2);
+  transform: translate3d(0, 0, calc($cubeDepth / 2));
 }
 
 ._3dface--top {
@@ -118,7 +118,7 @@ $cubeDepth: $cubeHeight;
   width: $cubeDepth;
   height: $cubeHeight;
   left: 50%;
-  margin-left: -$cubeDepth / 2;
+  margin-left: calc($cubeDepth / 2);
   transform: rotateY(-90deg) translate3d(0, 0, $cubeWidth / 2);
 }
 
@@ -127,7 +127,7 @@ $cubeDepth: $cubeHeight;
   width: $cubeDepth;
   height: $cubeHeight;
   left: 50%;
-  margin-left: -$cubeDepth / 2;
+  margin-left: calc($cubeDepth / 2);
   transform: rotateY(90deg) translate3d(0, 0, $cubeWidth / 2);
 }
 
@@ -135,7 +135,7 @@ $cubeDepth: $cubeHeight;
 ._3dface--back {
   width: $cubeWidth;
   height: $cubeHeight;
-  transform: rotateY(180deg) translate3d(0, 0, $cubeDepth / 2);
+  transform: rotateY(180deg) translate3d(0, 0, calc($cubeDepth / 2));
 }
 
 #space3D-container.left {

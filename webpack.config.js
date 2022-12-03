@@ -12,10 +12,8 @@ module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 3010,
-    writeToDisk: true,
+    port: 3010
   },
   module: {
     rules: [
